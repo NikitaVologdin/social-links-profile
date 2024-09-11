@@ -1,0 +1,103 @@
+@use '_fonts'
+@import _variables
+
+html, body
+    height: 100%
+
+body
+    font-family: "Inter", sans-serif
+    font-optical-sizing: auto
+
+main
+    display: flex
+    align-items: center
+    flex-grow: 2
+
+
+.container
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    padding-bottom: 10px
+    background-color: $Grey900
+
+.profile
+    background-color: $Grey800
+    min-width: 327px
+    max-height: 579px
+    border-radius: 12px
+    padding: 24px
+    display: flex
+    flex-direction: column
+    gap: 24px
+    align-items: center
+    justify-content: center
+
+    img
+        border-radius: 999px
+        height: 88px
+        width: 88px
+    
+    h1
+        @include text-preset1()
+        color: $White
+
+    h3
+        @include text-preset2-bold()
+        color: $Green
+
+    h2
+        @include text-preset2()
+        color: $White
+
+.social
+    width: 100%
+    display: flex
+    flex-direction: column
+    gap: 16px
+
+    .social__link
+        display: block
+        cursor: pointer
+        padding: 12px 0
+        text-align: center
+        text-decoration: none
+        text-transform: capitalize
+        color: $White
+        background-color: $Grey700
+        border-radius: 8px
+        transition: background-color .5s ease-out
+        @include text-preset2-bold()
+
+        &:hover
+            background-color: $Green
+            color: $Grey700
+        
+        
+
+aside
+    color: white
+    flex-shrink: 1
+
+
+    a
+        color: white
+
+        &:visited, 
+        &:link
+            color: white
+                
+    .attribution
+        font-size: 11px
+        text-align: center
+
+
+@media screen and (min-width:768px ) 
+    .profile
+        min-width: 456px
+
+@media screen and (min-width: 1024px)
+    .profile
+        min-width: 384px
+    
