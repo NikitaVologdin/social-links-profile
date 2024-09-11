@@ -120,14 +120,14 @@ main {
   font-weight: 700;
   color: hsl(0, 0%, 100%);
 }
-.profile h3 {
+.profile h2 {
   font-size: 14px;
   line-height: 150%;
   letter-spacing: 0px;
   font-weight: 700;
   color: hsl(75, 94%, 57%);
 }
-.profile h2 {
+.profile h3 {
   font-size: 14px;
   line-height: 150%;
   letter-spacing: 0px;
@@ -180,6 +180,7 @@ aside .attribution {
 @media screen and (min-width: 768px) {
   .profile {
     min-width: 456px;
+    padding: 24px 40px;
   }
 }
 @media screen and (min-width: 1024px) {
